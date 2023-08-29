@@ -1,0 +1,64 @@
+/* Navbar.css */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 16px; /* Tamanho reduzido do padding */
+    background-color: white;
+    color: black;
+    z-index: 1000; /* Z-index adicionado para garantir que a barra fique acima de outros elementos */
+  }
+  
+  .left-section {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo {
+    width: 25px; /* Tamanho reduzido da logo */
+    height: 25px; /* Tamanho reduzido da logo */
+    margin-right: 8px; /* Margem reduzida */
+  }
+  
+  .contact-info {
+    margin-right: 10px; /* Margem reduzida */
+  }
+  
+  .whatsapp-icon {
+    font-size: 18px; /* Tamanho reduzido do ícone */
+    margin-right: 3px; /* Margem reduzida */
+    margin-left: 40px;
+  }
+  
+  .right-section {
+    display: flex;
+  }
+  
+  .social-icon {
+    font-size: 22px; /* Tamanho fixo dos ícones de redes sociais */
+    width: 22px; /* Largura fixa dos ícones de redes sociais */
+    height: 22px; /* Altura fixa dos ícones de redes sociais */
+    margin-right: 25px; /* Reduzida a margem */
+    transition: background-color 0.3s; /* Adicionar transição suave */
+  }
+  
+  .social-icon:hover {
+    background-color: #0056b3; /* Cor de fundo ao passar o mouse */
+  }
+  
+  /* Ajustar estilos responsivos conforme necessário */
+  @media (max-width: 768px) {
+    .navbar {
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 10px;
+    }
+  
+    .right-section {
+      margin-top: 10px;
+    }
+  }
